@@ -12,7 +12,6 @@ def fahrenheit_to_celsius (temp_in_fahrenheit)
 	temp_in_celsius = (temp_in_fahrenheit - 32) * 5.0 / 9.0
 
 	return temp_in_celsius.round(1)
-
 end
 
 temp_in_celsius = fahrenheit_to_celsius(temp_in_fahrenheit)
