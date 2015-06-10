@@ -51,25 +51,24 @@ curious_george = gets.chomp.downcase
 def grocery_list_check(grocery_list, curious_george)
 
   if grocery_list.include?('Bananas') == false && curious_george == "yes"
-    p "You IZ bananas. Don't forget to pick some up today."
+    puts "\nYou IZ bananas. Don't forget to pick some up today."
 
   elsif grocery_list.include?('Bananas') == false && curious_george == "no"
-    p "Well, I'm glad you've established your own sanity, but don't forget to pick up some bananas today."
+    puts "\nWell, I'm glad you've established your own sanity, but don't forget to pick up some bananas today."
 
   elsif grocery_list.include?('Bananas') == true && curious_george == "yes"
-    p "Good job. You're both sane, and awash in bananas."
+    puts "\nGood job. You're both sane, and awash in bananas."
 
   else grocery_list.include?('Bananas') == true  && curious_george == "no"
-    p "You have bananas already. Keep your shit together."
+    puts "\nYou have bananas already. Keep your shit together."
 
   end
 end
 
 grocery_list_check(grocery_list, curious_george)
 
-puts "Also, make sure you get the best #{grocery_list[1]} they have."
-
-puts "Can't find the damn Prosciutto. Losin' it and giving myself a new list."
+puts "\nAlso, make sure you get the best #{grocery_list[8]} they have."
+puts "\nLooking around and can't find the damn Prosciutto. Losin' it and giving myself a new list."
 
 grocery_list.delete("Prosciutto")
 
