@@ -34,19 +34,16 @@ show_cohorts(cohorts)
 
 def expand_cohorts_by_5_percent(cohorts)
 
-  cohorts.map do |key, value|
-    (value * 1.05).to_f.round(1)
+  cohorts.each_value do |value|
+    (value * 1.05)
+    puts value
   end
-
-  return cohorts
 end
 
 puts "\n"
 puts "You picked up the \"chance\" card in Monopoly. Increase the size of your classrooms by 5%."
 
-show_cohorts(
   expand_cohorts_by_5_percent(cohorts)
-  )
 
 puts "\n"
 puts "Well, that didn't do much eh?"
